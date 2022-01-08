@@ -1,0 +1,37 @@
+# Please read this carefully
+# Each mandatory section will be marked
+# With a comment stating "MANDATORY"
+# Please fill out all mandatory sections
+# Plese fill out all blank sections that you find necessary
+# Note that some files have some information provided in the template
+# This information should not be changed
+
+# MANDATORY
+apiVersion: v1
+
+# MANDATORY
+kind: Sercive
+
+# MANDATORY
+metadata:
+  name:
+  
+  labels:
+    app:
+    tier:
+    role:
+
+# MANDATORY
+spec:
+  ports:
+  # copy the following - port: line to add more ports when necessary
+  - port:
+    targetPort:
+
+  selector: 
+    app:
+    tier:
+    role:
+
+# ---
+# Please uncomment the above line and replace this comment with any other information you would like to include in this file
