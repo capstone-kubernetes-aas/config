@@ -38,3 +38,5 @@
                   ports: (This field is not mandatory. Use to specify container ports)
                   - containerPort: (The chosen port for your container)
                 Note: you can specify more containers by copying the above format starting from "- name" and adding each needed copy underneath the first container specification.
+
+Note: Please excuse formatting. That will be updated.
