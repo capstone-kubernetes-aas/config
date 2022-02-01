@@ -1,0 +1,27 @@
+# Please read this carefully
+# Each mandatory section will be marked
+# With a comment stating "MANDATORY"
+# If an item which has sub items is marked MANDATORY, please fill out all subsections within
+# unless marked otherwise
+# Please fill out all mandatory sections
+# Plese fill out all blank sections that you find necessary
+# Note that some files have some information provided in the template
+# This information should not be changed
+
+# MANDATORY
+apiVersion: v1
+
+# MANDATORY
+kind: Pod
+
+# MANDATORY
+metadata:
+  name: 
+
+# MANDATORY
+spec:
+  containers:
+  - name:
+    image:
+    ports:
+    - containerPort:

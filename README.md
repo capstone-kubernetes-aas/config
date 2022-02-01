@@ -7,4 +7,4 @@ For the service and deployment templates, multiple may be used by the user.
 Note that these service and deployment configs can be compiled into one yaml file, but I have so far separated them for ease of reading and use.
 
 
-Need to reformat documentation for legebilty as well as add config template, example, and documentation of pods.
+Need to reformat documentation for legebilty.
