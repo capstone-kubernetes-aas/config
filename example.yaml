@@ -1,0 +1,76 @@
+# MANDATORY
+apiVersion: apps/v1
+
+# MANDATORY
+kind: Deployment
+
+# MANDATORY
+metadata:
+  name: myAppDeploy
+
+# MANDATORY
+spec:
+  selector:
+    matchLabels:
+      app: myApp
+      # tier: 
+      # role:
+
+  replicas: 10
+
+  template:
+    metadata:
+      labels:
+        app: myApp
+        # tier:
+        # role:
+
+    spec:
+      containers:
+      - name: myContainer
+
+        image: balinj/myDockerImageExample:latest
+
+        # NOT MANDATORY
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "64Mi"
+        
+        # NOT MANDATORY 
+        # please uncomment for use
+        #env:
+        #- name:
+        #  value:
+        #  
+        ports:
+        - containerPort: 8080
+
+---
+
+# MANDATORY
+apiVersion: v1
+
+# MANDATORY
+kind: Sercive
+
+# MANDATORY
+metadata:
+  name: myAppService
+  
+  labels:
+    app: myApp
+    # tier: 
+    # role:
+
+# MANDATORY
+spec:
+  ports:
+  # copy the following - port: line to add more ports when necessary
+  - port: 8080
+    targetPort: 8080
+
+  selector: 
+    app: myApp
+    # tier:
+    # role:
