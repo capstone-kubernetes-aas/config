@@ -7,7 +7,8 @@ This field specifies the version of Kubernetes you are using. For deployments, t
 ```
 ### kind:
 ```
-This field specifies what the config file will be used for. This could be Deployment, Service, Pod, and the like. The most common are Deployment and Service. For deployments, the kind will alwayse Deployment.
+This field specifies what the config file will be used for. This could be Deployment, Service, Pod, and the like. 
+The most common are Deployment and Service. For deployments, the kind will alwayse Deployment.
 ```
 
 ## *User specified fields*
@@ -15,7 +16,8 @@ This field specifies what the config file will be used for. This could be Deploy
 ### metadata:
 * #### name:
     ```
-    This field is specifies the name of the deployment so that it can be identified when the deployment is running (as there can be multiple deployments).
+    This field is specifies the name of the deployment so that it can be identified when the deployment is running 
+    (as there can be multiple deployments).
     ```
 
 ### spec: 
