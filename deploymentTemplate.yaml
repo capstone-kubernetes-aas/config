@@ -17,6 +17,9 @@ kind: Deployment
 # MANDATORY
 metadata:
   name:
+  # the following is an optional field where we can have users speicify the namespace that they want to use
+  # NOTE: the namespace will be `default` if it's not speificed in the yaml
+  namespace: default
 
 # MANDATORY
 spec:
@@ -38,8 +41,8 @@ spec:
     spec:
       containers:
       - name:
-
         image:
+        imagePullPolicy: IfNotPresent
 
         resources:
           requests:

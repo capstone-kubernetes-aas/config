@@ -19,6 +19,11 @@ The most common are Deployment and Service. For deployments, the kind will alway
     This field is specifies the name of the deployment so that it can be identified when the deployment is running 
     (as there can be multiple deployments).
     ```
+* #### namespace:
+    ```
+    This field can be configured with the name of the namespace for the deployment to be in a certain namespace 
+    (OPTIONAL, does not have to specified and will be deployed in 'default' if not specified).
+    ```
 
 ### spec: 
 * #### selector:
@@ -45,6 +50,7 @@ The most common are Deployment and Service. For deployments, the kind will alway
         * #### containers: 
             ```
             - name: (The name you wish to give your container)
+            imagePullPolicy: (Must be configured to IfNotPresent since we are using local docker registry)
             image: (The name/path of the docker image used for these containers)
             ports: (This field is used to specify container ports)
             - containerPort: (The chosen port for your container)
