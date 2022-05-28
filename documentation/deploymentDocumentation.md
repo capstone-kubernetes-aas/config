@@ -46,8 +46,8 @@ spec:
         spec: 
             containers: 
             - name: (The name you wish to give your container)
-                imagePullPolicy: (Must be configured to IfNotPresent since we are using local docker registry)
-                image: (The name/path of the docker image used for these containers)
-                ports: (This field is used to specify container ports)
-                - containerPort: (The chosen port for your container)
+              imagePullPolicy: (Must be configured to IfNotPresent since we are using local docker registry)
+              image: (The name/path of the docker image used for these containers)
+              ports: (This field is used to specify container ports)
+              - containerPort: (The chosen port for your container)
 ```

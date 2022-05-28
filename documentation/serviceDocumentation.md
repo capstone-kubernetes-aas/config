@@ -24,7 +24,7 @@ metadata:
 spec: 
     ports: 
     - port: (The port to expose e.g: 8080)
-        targetPort: (Usually the same as this "- port" but doesn't have to be.)   
+      targetPort: (Usually the same as this "- port" but doesn't have to be.)   
        
     selector:
         app: (Should be same as above)
